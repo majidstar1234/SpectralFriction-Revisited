@@ -1,35 +1,42 @@
 # Spectral Friction Revisited: Quality Factor as the Dominant Governor of Wave Birth Time
 
-این مخزن شامل کد متلب و نسخه‌ی نهایی مقاله‌ای است که نشان می‌دهد پارامتر اصطکاک طیفی $\kappa = T_s/T_0$ عمدتاً توسط عکس کیفیت $1/Q$ کنترل می‌شود نه پارامترهای هندسی.
+**Author:** Amir Reza Babaei  
+**Journal:** ASME Journal of Vibration and Acoustics (Under Review)  
+**DOI:** [10.5281/zenodo.18612833](https://doi.org/10.5281/zenodo.18612833)  
+**GitHub:** [https://github.com/majidstar1234/spectralFriction-Revisited](https://github.com/majidstar1234/spectralFriction-Revisited)
 
-## محتویات
-- `code/` : کد تولید شکل‌های مقاله
-- `figures/` : تمام شکل‌های مقاله با کیفیت 600 dpi
-- `manuscript/` : فایل منبع LaTeX مقاله
-- `results/` : جدول نتایج عددی برای نت‌های C2 تا C7
+---
 
-## نحوه اجرا
-1. MATLAB را باز کنید.
-2. فایل `SpectralFrictionFigureGenerator.m` را اجرا کنید.
-3. شکل‌ها در پوشه `Spectral_Friction_Figures` روی دسکتاپ ذخیره می‌شوند.
+## 📌 Overview
+This repository contains all MATLAB codes, datasets, figures, and supplementary materials supporting the paper:
 
-## وابستگی‌ها
-- MATLAB (2017 یا بالاتر)
-- جعبه‌ابزار Statistics and Machine Learning (برای PCA)
+> **"Spectral Friction Revisited: Quality Factor as the Dominant Governor of Wave Birth Time"**
 
-## مجوز
-این پروژه تحت مجوز MIT منتشر می‌شود.
+The study demonstrates that the spectral friction parameter \(\kappa = T_s/T_0\) in piano strings is predominantly governed by the inverse quality factor \(1/Q\), with a regression model:
 
-## استناد (Citation)
+\[
+\kappa = 0.688 + 8.801\left(\frac{L}{\lambda}\right) - 183.714\left(\frac{1}{Q}\right), \quad R^2 = 0.9994
+\]
 
-@article{Babaei2026,
-title={Spectral Friction Revisited: Quality Factor as the Dominant Governor of Wave Birth Time},
-author={Babaei, Amir Reza},
-journal={Journal of Applied Physics},
-year={2026},
-note={Under review}
-}
+Sensitivity analysis shows that \(94.7\%\) of the variance in \(\kappa\) originates from \(Q\), confirming its dominant role.
 
+---
 
-## شناسه دیجیتال (DOI)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg)](https://doi.org/10.5281/zenodo.18612833)
+## 📁 Repository Structure
+
+| Folder | Description |
+|--------|-------------|
+| `codes/main_simulation/` | Core MATLAB scripts for the main paper (attack curve, sensitivity, response surface, etc.) |
+| `codes/measurement_Q/` | MATLAB codes for practical Q measurement, control, and design guidelines |
+| `figures/` | All generated figures (PNG format, 300 dpi) including the graphical abstract |
+| `data/` | Experimental data in CSV format (Tables 1 & 2 from the paper) |
+| `manuscripts/` | Supplementary manuscript on Q adjustment (PDF) |
+
+---
+
+## 🚀 How to Use
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/majidstar1234/spectralFriction-Revisited.git
+   cd spectralFriction-Revisited
