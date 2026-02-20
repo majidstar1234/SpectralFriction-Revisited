@@ -1,0 +1,21 @@
+Results
+
+The multivariate linear regression applied to the 61-note dataset (C2–C7) yielded the following relation for the spectral friction parameter κ = Ts/T0:
+
+κ = 0.688 + 8.801(L/λ) - 183.714(1/Q),
+
+with an R² value of 0.9994 and a root‑mean‑square error (RMSE) of 0.003. The regression coefficients, their standard errors, and significance levels are listed in Table 1. The extremely high t‑statistics and negligible p‑values confirm the statistical significance of all terms.
+
+Sensitivity analysis, illustrated in Fig. 1(a), reveals that the inverse quality factor 1/Q accounts for 94.7% of the total variance in κ, while the geometric parameter L/λ contributes only 4.5%. The remaining 0.7% is attributed to other minor factors. The absolute sensitivity coefficients in Fig. 1(b) further demonstrate that κ is more than twenty times more sensitive to 1/Q than to L/λ.
+
+The values of κ for six representative notes (C2 to C7) are plotted in Fig. 1(c) and listed in Table 2 together with the corresponding frequencies, quality factors, and attack times Ts. A clear monotonic increase of κ with pitch is observed, from 3.419 at C2 to 5.908 at C7, while Ts decreases from 52.27 ms to 2.82 ms. The distribution of prediction errors, shown in Fig. 1(d), is centered around zero with a standard deviation consistent with the RMSE, confirming the absence of systematic bias.
+
+Figure 2 validates the regression model against experimental measurements. Panel (a) displays the predicted versus experimental κ values; all points lie very close to the identity line, demonstrating excellent agreement. Panel (b) compares the predicted and measured attack times Ts for the same notes, further confirming the model’s accuracy.
+
+The response surface of κ as a function of L/λ and 1/Q is depicted in Fig. 3. The strong curvature along the 1/Q axis visually reinforces the dominant role of dissipation. Principal component analysis (Fig. 4) shows that the first principal component (PC1) captures 95.1% of the total variance, and its loading factors are overwhelmingly dominated by 1/Q.
+
+Finally, the domain of validity of the linear relation is examined. From the requirement κ > 0, the condition
+
+Q > 183.714 / (0.688 + 8.801 (L/λ))
+
+must hold. For typical piano values of L/λ (0.3–0.6), this gives Q > 38–57, which is satisfied by all notes in the Steinway Model D (Q ranging from 600 to 3000). Hence the linear approximation is valid for the entire piano range and is expected to hold for most resonant systems with sufficiently high Q.
